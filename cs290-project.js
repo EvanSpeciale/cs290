@@ -15,6 +15,26 @@ app.get('/',function(req,res){
 	res.render('home');
 })
 
+app.get('/resume',function(req,res){
+  res.render('resume');
+})
+
+app.get('/contact',function(req,res){
+  res.render('contact');
+})
+
+app.get('/blog',function(req,res){
+  res.render('blog');
+})
+
+app.get('/blog/1',function(req,res){
+  res.render('1');
+})
+
+app.get('/blog/2',function(req,res){
+  res.render('2');
+})
+
 app.use(function(req,res){
   res.status(404);
   res.render('404');
